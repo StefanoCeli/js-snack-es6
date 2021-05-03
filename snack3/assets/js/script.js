@@ -17,41 +17,37 @@ $(document).ready(function(){
            classe : "uccelli"
        },
        {
-           nome : "gatto",
-           famiglia : "felini",
+           nome : "colomba",
+           famiglia : "columbidae",
+           classe : "uccelli"
+       },
+       {
+           nome : "cobra",
+           famiglia : "serpenti",
+           classe : "rettili"
+       },
+       
+       {
+           nome : "lupo grigio",
+           famiglia : "canidae",
            classe : "mammiferi"
        },
        {
-           nome : "gatto",
-           famiglia : "felini",
-           classe : "mammiferi"
+            nome : "pogona",
+            famiglia : "agamidae",
+            classe : "rettili"
        },
        {
-           nome : "gatto",
-           famiglia : "felini",
+           nome : "elefante",
+           famiglia : "elephantidae",
            classe : "mammiferi"
-       },
-       {
-           nome : "gatto",
-           famiglia : "felini",
-           classe : "mammiferi"
-       },
-       {
-           nome : "gatto",
-           famiglia : "felini",
-           classe : "mammiferi"
-       },
-       {
-           nome : "gatto",
-           famiglia : "felini",
-           classe : "mammiferi"
-       },
-       {
-           nome : "gatto",
-           famiglia : "felini",
-           classe : "mammiferi"
-       },
-   ]
+       }
+   ];
+   console.log(animali);
+
+   //creo una variabile dove all'interno vado a filtrare i mammiferi presenti in animali
+   const mammiferi = animali.filter((animale)=> animale.classe === "mammiferi");
+   console.log(mammiferi);
    
 
 
