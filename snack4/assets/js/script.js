@@ -40,16 +40,16 @@ $(document).ready(function(){
    ];
    console.log(persone);
 
-   persone.forEach((persona)=>{
+   const puoGuidare = persone.map((persona)=>{
     let {nome,cognome,eta}=persona;
     let idoneita = (eta>18) ? 'Può guidare' : 'Non può guidare'
 
-    let risultato = `
-                    ${nome} ${cognome} ${idoneita}
-    `
+    let risultato = `${nome} ${cognome} ${idoneita}`
     console.log(risultato);
     console.log('--------------------------------------------------------------------');
+    return risultato;
    })
+   console.log(puoGuidare);
   
 
 
